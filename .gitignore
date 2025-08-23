@@ -1,0 +1,32 @@
+# Exclude build outputs and binaries
+bin/
+obj/
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Exclude IDE and user-specific files
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Exclude OS and temp files
+Thumbs.db
+.DS_Store
+*.tmp
+*.log
+
+# Exclude backup and archive files
+*.zip
+*.bak
+
+# Keep documentation and diagrams
+# (Do NOT ignore .md, .mdzip, .png, .jpg)
+
+# Keep source code and configs
+# (Do NOT ignore .cs, .java, .xml, .sln, .txt, .md)

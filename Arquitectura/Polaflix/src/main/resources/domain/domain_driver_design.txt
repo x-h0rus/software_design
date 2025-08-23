@@ -1,0 +1,43 @@
+ENTITIES
+---------------------------------------------------------------------------------
+Serie -> Se treata de una entidad porque es uno de los objetos principales que debe monitorizar la aplicacion.
+		 El ciclo de vida de cada serie individual, debe ser adecuadamente gestionado y monitorizado. Dos series con 
+		 identicos valores (Salvo identificador) no seran series equivalentes.
+		 
+		 
+SerieGold -> Idem Serie
+SerieSilver -> Idem Serie
+SerieEstandar -> Idem Serie
+
+Temporada -> Al ser las series una entidad, sus temporadas adquieren caracter de entidad. Es decir, al 
+			 necesitar monitorizar la evolucion de las series, monitorizar la evolucion de sus temporadas
+			 tambien es necesario. De esta forma, parece complicado que dos temporadas se puedan inbtercambiar entre series como
+			 simples valores. Cada temporada forma parte por si misma de una serie.
+			 
+Capitulo -> Idem Temporada, pero sobre temporada
+
+Usuario -> Idem Serie, pero sobre un usuario
+
+UltimoCapituloVisto -> Idem Temporada, pero sobre Usuario
+CapitulosVistos -> Idem UltimoCapituloVisto
+
+Facturacion -> Idem Temporada, pero sobre Usuario
+			
+FacturacionCuotaFija -> Idem Facturacion
+FacturacionBajoDemanda -> Idem Facturacion
+
+Visualizacion -> Idem Temporada, pero sobre Facturacion
+
+VALUE OBJECTS
+
+CuentaBancaria -> En la aplicacion , una Cuenta Bancaria es un atributo del Usuario
+Persona -> Idem CuentaBancaria pero sobre Serie
+
+SERVICE
+	ServicioCobrarFacturas
+		
+	
+	
+	AGGREGATES
+		Serie(Root) - SerieEstandar - SerieGold - SerieSilver - Temporada - Capitulo - Persona - TipoPersona
+		Usuario(Root) - CuentaBancaria - Facturacion - FacturacionBajoDemanda - FacturacionCuotaFija - Visualizacion - UltimoCapituloVisto - CapitulosVistos

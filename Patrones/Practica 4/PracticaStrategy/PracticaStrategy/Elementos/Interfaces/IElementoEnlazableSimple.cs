@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace PracticaStrategy.Elementos.Interfaces
+{
+    /*
+     * Interfaz que representa a un elemento enlazable simple
+     * @author Adrian Garcia Cubas 
+     */
+    public interface IElementoEnlazableSimple : IElementoEnlazable
+    {
+    }
+}
