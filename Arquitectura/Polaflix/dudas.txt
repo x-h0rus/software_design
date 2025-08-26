@@ -1,8 +1,0 @@
-DUDAS
-	1. En UsuariosRepositorio, como poder hacer findByName [Devolver Set?]
-	2. En SeriesEmpezadasDataMapper, preguntar si find devuelve la serie normal
-	3. En TestJanuary2021, en ConcursoFigura2DtoAssembler, porque no mete 
-	   los ProyectoFigura2dto en result
-	   
-	4. Estan bien los throws SQLException en listas Usuario, o mejor try/catch
-	5. Las facturas Cuota fija tienen que tener visualizaciones tambien?
